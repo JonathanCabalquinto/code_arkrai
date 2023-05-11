@@ -49,7 +49,7 @@ jobs:
     
       # Clears the cloudfront cache so new request will recieve the latest version of you app
       - name: Invalidate Cloudfront
-      - uses: chetan/invalidate-cloudfront-action@v2.4
+        uses: chetan/invalidate-cloudfront-action@v2.4
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
           PATHS: '/*'
